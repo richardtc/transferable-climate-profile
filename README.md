@@ -1,4 +1,6 @@
-# Region Climate Profile
+# A Transferable Climate Profile Framework
+
+**Using WorldClim v2.1 and CMIP6 SSP projections. Case study: Cambodia**
 
 An open, reproducible workflow in R and Quarto for producing a national climate profile from WorldClim data: historical baseline maps and charts, future projections under two emissions scenarios, and seasonal outputs tailored to a region and sector of interest. The worked example is Cambodia and rice farming, but the workflow can be applied to any country by changing a few variables.
 
