@@ -1946,8 +1946,10 @@ After generating images, run the following chunk to edit images ready for incorp
 #| eval: false
 ## Edit PNGs: trim white space, add 10 px border, and resize PNGs
 
-# List PNG files
+# List original PNG files only: skip the _rs.png outputs of earlier runs,
+# otherwise each run resizes them again and adds another _rs
 pngs <- list.files(out_dir_graphics, pattern = "\\.png$", full.names = TRUE)
+pngs <- pngs[!grepl("_rs\\.png$", pngs)]
 
 for (f in pngs) {
   # Create new filename with _rs suffix before .png extension
