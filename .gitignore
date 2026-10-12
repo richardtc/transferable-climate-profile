@@ -1,0 +1,28 @@
+# WorldClim data ignored, except the resized display images
+wc_downloads_*/*
+!wc_downloads_*/graphics/
+wc_downloads_*/graphics/*
+!wc_downloads_*/graphics/*_rs.png
+
+# Rendered outputs
+region_profile.html
+region_profile_files/
+*_files/
+*.html
+
+# Archives and backups
+*.zip
+backups/
+
+# renv project library (renv.lock is committed for reproducibility)
+renv/
+
+# Local notes
+info.txt
+
+# RStudio
+.Rproj.user/
+.Rhistory
+.RData
+.Rprofile
+
